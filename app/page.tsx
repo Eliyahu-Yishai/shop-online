@@ -4,7 +4,7 @@ import Head from "next/head";
 export default function Home() {
   return (
     <>
-      <Head className="flex min-h-screen flex-col items-center justify-between p-24">
+      <Head>
         <title>Shop-Online</title>
         {/* <link rel="icon" href="/smallLogo.ico"></link> */}
       </Head>

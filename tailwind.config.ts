@@ -1,5 +1,5 @@
 import type { Config } from "tailwindcss";
-
+const {fontFamily} = require('tailwindcss/defaultTheme');
 const config: Config = {
   content: [
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
@@ -32,6 +32,9 @@ const config: Config = {
       },
       boxShadow:{
         bannerShadow: "0 1px 2px 1px #00000026",
+      },
+      fontFamily:{
+        sans: ["var(--font-open_sans)", ...fontFamily.sans],
       }
     },
   },
