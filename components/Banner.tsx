@@ -24,8 +24,13 @@ const Banner = () => {
         <div className='w-full bg-white px-4 py-6 font-titleFont flex gap-4 border-b-[1px]'>
             <div className='w-2/3 rounded-lg h-[410px] shadow-bannerShadow relative'></div>
             <Slider {...settings}>
-                <div>
-                    <Image src={sliderImgOne} alt="sliderImgOne" priority/>
+                <div className='w-full h-[410px] relative'>
+                    <Image
+                        className='w-full h-full object-cover rounded-lg'
+                        src={sliderImgOne}
+                        alt="sliderImgOne"
+                        priority
+                        />
                 </div>
             </Slider>
             <div className='w-1/3 border-[1px] border-gray-200 rounded-lg 
